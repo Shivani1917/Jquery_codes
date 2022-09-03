@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery_20</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){  //button click krte hi paragraph slowly hide hoga or ek alert pop out hoga..
+              $("button").click(function(){
+                    $("p").hide("slow",function(){
+                    alert("The paragraph is hidden");
+                    });
+              });
+        });
+    </script>
+</head>
+<body>
+    
+      <p>See the transition</p>
+      <p>using delay in hiding</p>
+
+      <button id="hide">Hide</button>
+
+</body>
+</html>

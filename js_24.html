@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery_24</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){ //button click krte hi div1 remove ho jayga.
+            $("button").click(function(){
+                $("#div1").remove();
+            });
+        });
+
+    </script>
+</head>
+<body>
+      <p>Not a part of DIV</p>
+      
+    <div id="div1" style="height:100px;width: 300px;border: 1px solid black;background-color: yellow;">
+      <p>Part of the div1 as p1</p>
+      <p>Part of the div1 as p2</p>
+    </div>
+    <br>
+
+      <button>Remove div</button> 
+       
+</body>
+</html>

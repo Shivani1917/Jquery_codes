@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery_29</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){//button click krte hi p ki css change hogi
+            $("button").click(function(){
+                $("p").css("background-color","yellow");
+            });
+        });
+
+    </script>
+    <style>
+        .red{
+           color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Editing css without Style</h2>
+
+    <p style="background-color: #ff0000">This is 1st para</p>
+    <p style="background-color: #00ff00">This is 1st para</p>
+    <p style="background-color: #0000ff">This is 1st para</p>
+
+    <p>These are colored paras</p>
+
+      <button>Change the color</button>
+</body>
+</html>

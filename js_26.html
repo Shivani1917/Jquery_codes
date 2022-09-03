@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery_26</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){ //button click krte hi h1,h2,p me red class add hogi or div me blue.
+            $("button").click(function(){
+                $("h1, h2, p").addClass("red");
+                $("div").addClass("blue");
+            });
+        });
+
+    </script>
+    <style>
+        .red{
+            font-weight: bold;
+            font-size: xx-large;
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+      <h1>This is heading 1</h1>
+      <h2>This is heading 2</h2>
+
+      <p>This is para 1</p>
+      <p>This is para 2</p>
+
+      <div>This is important text</div>
+
+      <button>Add css</button>
+</body>
+</html>

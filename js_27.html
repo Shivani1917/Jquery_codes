@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery_27</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){//class hatt jaygi button click krte hi..
+            $("button").click(function(){
+                $("h1, h2, p").removeClass("red");
+            });
+        });
+
+    </script>
+    <style>
+        .red{
+            font-weight: bold;
+            font-size: xx-large;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+      <h1 class="red">This is heading 1</h1>
+      <h2 class="red">This is heading 2</h2>
+
+      <p class="red">This is para 1</p>
+      <p class="red">This is para 2</p>
+
+      <div>This is important text</div>
+
+      <button>Remove css</button>
+</body>
+</html>

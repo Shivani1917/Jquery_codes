@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery_22</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+               $("#btn1").click(function(){//button click krte hi para1 ka text change hoga
+                   $("#demo1").text("changed para1");//text() se sirf text cahnge hota hi chahe phir hum html tags bhi kuu na laga de.
+           });
+               $("#btn2").click(function(){//button click krte hi para2 ka text+html dono change hoga
+                   $("#demo2").html("<b>this is changed para2</b>");
+           });
+               $("#btn3").click(function(){//button click krte hi para3 ki value change hogi
+                   $("#demo3").val("BVOC2ndYR");
+           });
+        });
+    </script>
+</head>
+<body>
+    
+      <p id="demo1">This is the <b>paragraph</b> available</p>
+      <p id="demo2">This is another paragraph</p>
+      <p>Input area: <input type="text" id="demo3" value="BVOC1stYR"></p>
+
+
+      <button id="btn1">Set text</button>
+      <button id="btn2">Set HTML</button>
+      <button id="btn3">Set Value</button>
+      
+
+</body>
+</html>

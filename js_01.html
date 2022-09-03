@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>jQuery_01</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script> 
+        $(document).ready(function(){          //To access the document to manipultions
+           $("button").click(function(){       //button click krte hi kuch ho
+               $("p").hide();                  //or wo kuch is hide here
+           });
+        });           //mtlb document mai button click krte hi paragraph hide ho jayga!! 
+    </script>
+
+</head>
+<body>
+    
+    <h2>This is hiding para one by one</h2>
+
+    <p>This is para 1st.</p>
+    <p>This is para 2nd.</p>
+
+    <button>To Hide</button>
+
+</body>
+</html>

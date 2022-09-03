@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery_08</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".test").mouseenter(function(){   //as soon as mouse enters in a field
+                  alert("You entered p2 or p3");  //then pop alert
+             });
+        });
+    </script>
+</head>
+<body>
+
+    <h2>Using ID Selector</h2>
+
+    <p>This is para 1st.</p>
+    <p class="test">This is para 2nd.</p>
+    <p class="test">This is para 3rd.</p>
+</body>
+</html>

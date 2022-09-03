@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery_21</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){ //1st button ko click krne se p ka text alert me show hoga or 2nd se uska html..
+               $("#btn1").click(function(){
+                   alert($("#demo").text());
+           });
+               $("#btn2").click(function(){
+                   alert($("#demo").html());
+               });
+        });
+    </script>
+</head>
+<body>
+    
+      <p id="demo">This is the <b>paragraph</b> available</p>
+
+      <button id="btn1">Show text</button>
+      <button id="btn2">Show HTML</button>
+      
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery_06</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+             $(".test").dblclick(function(){  //this class wale element par doubleclick krne se wo element hide ho jayga..
+                  $(this).hide();
+             });
+        });
+    </script>
+</head>
+<body>
+
+    <h2>Using ID Selector</h2>
+
+    <p class="test">This is para 1st.</p>
+    <p class="test">This is para 2nd.</p>
+
+</body>
+</html>

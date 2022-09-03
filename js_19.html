@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery_19</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){ //flip div ko click krte hi panel dheere neeche slide hoga or
+                                    // agr hum button press kr de to wo slide hona stop ho jayga..
+                $("#flip").click(function(){    
+                  $("#panel").slideDown(6000);
+        });
+                $("#stop").click(function(){
+                  $("#panel").stop();
+                });
+    });
+    </script>
+
+    <style>
+        #flip{
+            padding: 5px;
+            text-align: center;
+            background-color:#e5eecc ;
+            border: solid 1px #c3c3c3;
+        }
+        #panel{
+            padding: 5px;
+            text-align: center;
+            background-color:#e5eecc ;
+            border: solid 1px #c3c3c3;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+     
+    <button id="stop">Stop</button>
+    <div id="flip">Click me to expand</div>
+    <div id="panel">This is expanded part</div>
+    
+</body>
+</html>

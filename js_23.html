@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery_23</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+               $("#btn1").click(function(){//btn click krte hi para me END me kuch text+html append yani add hoga.
+                   $("p").append("<b>Append New Text</b>");
+            });
+               $("#btn2").click(function(){//btn click krte hi list (END) me kuch ek list item append yani insert hoga.
+                   $("ol").append("<li>List 4</li>");
+               });
+        });
+
+    </script>
+</head>
+<body>
+      <p> Paragraph 1 __________</p>
+      <p> Paragraph 2 __________</p>
+
+      <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+      </ol>
+
+      <button id="btn1">Append Text</button>
+      <button id="btn2">Append List</button>
+</body>
+</html>
